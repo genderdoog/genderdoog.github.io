@@ -1,0 +1,40 @@
+body {
+	width: 450px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	border: 20px;
+	border-style: solid;
+	border-color: AliceBlue;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: 35px;
+	padding-right: 35px;
+	font-family: 'Roboto Slab', serif;
+	background-color: rgb(69,17,14);
+	color: white;
+}
+
+h1, h2 {
+	text-align: center;
+	text-transform: uppercase; 
+	border-top: 1px;
+	border-bottom: 1px;
+	border-color: gray;
+	border-style: dotted;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+li {
+	list-style-type: circle;
+}
+
+img {
+	width: 100%;
+}
+	
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+</style>
