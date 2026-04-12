@@ -1,0 +1,23 @@
+/* Define fonts from web server */
+@font-face {
+	font-family: "Ubuntu-400";
+	src: url('../fonts/Ubuntu-Regular.woff2') format('woff2'),
+		 url('../fonts/Ubuntu-Regular.woff') format('woff'); /* Fallback option */
+	font-weight: 400;
+	font-style: normal;
+}
+
+.content {
+	max-width: 60ch; /* Limit each element line to 60 characters */
+	font-family: "Ubuntu-400", sans-serif; /* Make all text in webpage Ubuntu 400 regular font */
+	margin: 0 auto; /* Center all webpage content */
+	margin-bottom: 5vw; /* Adds some margin to bottom of webpage */
+}
+
+/* Resizes any images to fit the width of 60 character */
+.content img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+	margin: 1rem 0;
+}

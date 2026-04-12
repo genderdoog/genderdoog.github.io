@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version 2.0>
+	<channel>
+		<title>Genderdoog's corner: Writing</title>
+		<link>https://genderdoog.github.io/</link>
+		<description>Genderdoogs corner is a personal website created by Matthew. Here, you can subscribe to an RSS feed of the latest writing posts!</description>
+		<language>en-us</language>
+		<lastBuildDate>Wed, 09 Jul 2025 18:19:00 +1200
+		
+		</lastBuildDate>
+	
+		<item>
+			<title>The King and the Cauliflower</title>
+			<link>https://genderdoog.github.io/writing/first_blog_post/</link>
+			<description>Short story shenanigans</description>
+			<
+		
+		</item>
+	</channel>
+</rss>
