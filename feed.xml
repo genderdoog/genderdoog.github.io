@@ -1,20 +1,129 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<rss version 2.0>
+<rss version="2.0" 
+			xmlns:atom="http://www.w3.org/2005/Atom">
+	
 	<channel>
 		<title>Genderdoog's corner: Writing</title>
 		<link>https://genderdoog.github.io/</link>
-		<description>Genderdoogs corner is a personal website created by Matthew. Here, you can subscribe to an RSS feed of the latest writing posts!</description>
+		<description>Genderdoogs corner is a personal website created by Matthew. This is an RSS feed of his latest writing posts.</description>
 		<language>en-us</language>
-		<lastBuildDate>Wed, 09 Jul 2025 18:19:00 +1200
+		<lastBuildDate>Thu, 23 Apr 2026 10:25:00 GMT</lastBuildDate>
 		
-		</lastBuildDate>
+		<atom:link href="https://genderdoog.github.io/feed.xml" 
+				   rel="self" 
+				   type="application/rss+xml" />
 	
 		<item>
-			<title>The King and the Cauliflower</title>
-			<link>https://genderdoog.github.io/writing/first_blog_post/</link>
-			<description>Short story shenanigans</description>
-			<
-		
+			<title>Short pencils</title>
+			<link>https://genderdoog.github.io/writing/short_pencils/</link>
+			<description>Short story shenanigans.</description>
+			<pubDate>Tue, 21 Apr 2026 00:00:00 GMT</pubDate>
+			<guid isPermaLink="true">https://genderdoogscorner.github.io/writing/short_pencils/</guid>
 		</item>
+		
+		<item>
+			<title>The King and the Cauliflower</title>
+			<link>https://genderdoog.github.io/writing/the_king_and_the_cauliflower/</link>
+			<description>Short story shenanigans.</description>
+			<pubDate>Tue, 18 Nov 2025 00:00:00 GMT</pubDate>
+			<guid isPermaLink="true">https://genderdoogscorner.github.io/writing/the_king_and_the_cauliflower/</guid>
+		</item>
+		
+		<item>
+			<title>How to make the best trivia quiz</title>
+			<link>https://genderdoog.github.io/writing/how_to_make_the_best_trivia_quiz/</link>
+			<description>Want to learn how to make a great trivia quiz? Here you go!</description>
+			<pubDate>Tue, 18 Nov 2025 00:00:00 GMT</pubDate>
+			<guid isPermaLink="true">https://genderdoog.github.io/writing/how_to_make_the_best_trivia_quiz/</guid>
+		</item>
+		
+		<item>
+			<title>Sandboxing (and my very first website)</title>
+			<link>https://genderdoog.github.io/writing/sandboxing/</link>
+			<description>Bad websites I made as a kid are cool I guess.</description>
+			<pubDate>Sat, 28 Jun 2025 00:00:00 GMT</pubDate>
+			<guid isPermaLink="true">https://genderdoog.github.io/writing/sandboxing/</guid>
+		</item>
+		
+		<item>
+			<title>Doog's CTF</title>
+			<link>https://genderdoog.github.io/writing/doogs_ctf/</link>
+			<description>Video game development is fun.</description>
+			<pubDate>Sat, 28 Jun 2025 00:00:00 GMT</pubDate>
+			<guid isPermaLink="true">https://genderdoog.github.io/writing/doogs_ctf/</guid>
+		</item>
+		
+		<item>
+			<title>Things you can do with a brick</title>
+			<link>https://genderdoog.github.io/writing/things_you_can_do_with_a_brick/</link>
+			<description>A list of things you can do with a brick.</description>
+			<pubDate>Sat, 28 Jun 2025 00:00:00 GMT</pubDate>
+			<guid isPermaLink="true">https://genderdoog.github.io/writing/things_you_can_do_with_a_brick/</guid>
+		</item>
+		
+		<item>
+			<title>Inside Out 2 review (spoilers)</title>
+			<link>https://genderdoog.github.io/writing/inside_out_2_spoilers/</link>
+			<description>A review of Inside Out 2 by Pixar Animation Studios.</description>
+			<pubDate>Sun, 07 Jul 2024 00:00:00 GMT</pubDate>
+			<guid isPermaLink="true">https://genderdoog.github.io/writing/inside_out_2_spoilers/</guid>
+		</item>
+		
+		<item>
+			<title>Fog and autonomous vehicles</title>
+			<link>https://genderdoog.github.io/writing/fog_and_autonomous_vehicles/</link>
+			<description>What is the future of autonomous vehicles?</description>
+			<pubDate>Fri, 28 Jun 2024 00:00:00 GMT</pubDate>
+			<guid isPermaLink="true">https://genderdoog.github.io/writing/fog_and_autonomous_vehicles/</guid>
+		</item>
+		
+		<item>
+			<title>The puzzle game sudoku</title>
+			<link>https://genderdoog.github.io/writing/the_puzzle_game_sudoku/</link>
+			<description>Sudoku is underated.</description>
+			<pubDate>Sun, 23 Jun 2024 00:00:00 GMT</pubDate>
+			<guid isPermaLink="true">https://genderdoog.github.io/writing/the_puzzle_game_sudoku/</guid>
+		</item>
+		
+		<item>
+			<title>Team Fortress 2</title>
+			<link>https://genderdoog.github.io/writing/team_fortress_2/</link>
+			<description>Best first person shooter ever made.</description>
+			<pubDate>Fri, 19 Apr 2024 00:00:00 GMT</pubDate>
+			<guid isPermaLink="true">https://genderdoog.github.io/writing/team_fortress_2/</guid>
+		</item>
+		
+		<item>
+			<title>The year 2030</title>
+			<link>https://genderdoog.github.io/writing/the_year_2030/</link>
+			<description>A small piece of fiction writing.</description>
+			<pubDate>Sat, 24 Feb 2024 00:00:00 GMT</pubDate>
+			<guid isPermaLink="true">https://genderdoog.github.io/writing/the_year_2030/</guid>
+		</item>
+		
+		<item>
+			<title>Day to day life</title>
+			<link>https://genderdoog.github.io/writing/day_to_day_life/</link>
+			<description>What you forget is surprising sometimes.</description>
+			<pubDate>Fri, 16 Feb 2024 00:00:00 GMT</pubDate>
+			<guid isPermaLink="true">https://genderdoog.github.io/writing/day_to_day_life/</guid>
+		</item>
+		
+		<item>
+			<title>Ticking clocks</title>
+			<link>https://genderdoog.github.io/writing/ticking_clocks/</link>
+			<description>Analog clocks are loud sometimes.</description>
+			<pubDate>Mon, 30 Oct 2023 00:00:00 GMT</pubDate>
+			<guid isPermaLink="true">https://genderdoog.github.io/writing/ticking_clocks/</guid>
+		</item>
+		
+		<item>
+			<title>First blog post</title>
+			<link>https://genderdoog.github.io/writing/first_blog_post/</link>
+			<description>The beginning.</description>
+			<pubDate>Fri, 05 May 2023 00:00:00 GMT</pubDate>
+			<guid isPermaLink="true">https://genderdoog.github.io/writing/first_blog_post/</guid>
+		</item>
+		
 	</channel>
 </rss>
