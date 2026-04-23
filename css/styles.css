@@ -11,6 +11,7 @@
 	max-width: 60ch; /* Limit each element line to 60 characters */
 	font-family: "Ubuntu-400", sans-serif; /* Make all text in webpage Ubuntu 400 regular font */
 	margin: 0 auto; /* Center all webpage content */
+	padding: 0 16px; /* Padding on left and right hand side for mobile */
 	margin-bottom: 5vw; /* Adds some margin to bottom of webpage */
 }
 
