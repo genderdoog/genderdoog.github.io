@@ -4,10 +4,10 @@
 	
 	<channel>
 		<title>Genderdoog's corner: Writing</title>
-		<link>https://genderdoog.github.io/</link>
+		<link>https://genderdoog.github.io/writing/</link>
 		<description>Genderdoogs corner is a personal website created by Matthew. This is an RSS feed of his latest writing posts.</description>
 		<language>en-us</language>
-		<lastBuildDate>Thu, 23 Apr 2026 10:25:00 GMT</lastBuildDate>
+		<lastBuildDate>Mon, 27 Apr 2026 20:00:00 GMT</lastBuildDate>
 		
 		<atom:link href="https://genderdoog.github.io/feed.xml" 
 				   rel="self" 
@@ -16,7 +16,7 @@
 		<item>
 			<title>Short pencils</title>
 			<link>https://genderdoog.github.io/writing/short_pencils/</link>
-			<description>Short story shenanigans.</description>
+			<description>Do this to get attention from everyone!</description>
 			<pubDate>Tue, 21 Apr 2026 00:00:00 GMT</pubDate>
 			<guid isPermaLink="true">https://genderdoogscorner.github.io/writing/short_pencils/</guid>
 		</item>
@@ -96,7 +96,7 @@
 		<item>
 			<title>The year 2030</title>
 			<link>https://genderdoog.github.io/writing/the_year_2030/</link>
-			<description>A small piece of fiction writing.</description>
+			<description>A small piece of fictional writing.</description>
 			<pubDate>Sat, 24 Feb 2024 00:00:00 GMT</pubDate>
 			<guid isPermaLink="true">https://genderdoog.github.io/writing/the_year_2030/</guid>
 		</item>
