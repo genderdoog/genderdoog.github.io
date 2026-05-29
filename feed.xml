@@ -7,12 +7,20 @@
 		<link>https://genderdoog.github.io/writing/</link>
 		<description>Genderdoogs corner is a personal website created by Matthew. This is an RSS feed of his latest writing posts.</description>
 		<language>en-us</language>
-		<lastBuildDate>Mon, 27 Apr 2026 20:00:00 GMT</lastBuildDate>
+		<lastBuildDate>Fri, 29 May 2026 10:55:00 GMT</lastBuildDate>
 		
 		<atom:link href="https://genderdoog.github.io/feed.xml" 
 				   rel="self" 
 				   type="application/rss+xml" />
 	
+		<item>
+			<title>Stockfish testing framework</title>
+			<link>https://genderdoog.github.io/writing/fishtest/</link>
+			<description>Donate compute to good causes.</description>
+			<pubDate>Fri, 29 May 2026 00:00:00 GMT</pubDate>
+			<guid isPermaLink="true">https://genderdoogscorner.github.io/writing/fishtest/</guid>
+		</item>
+		
 		<item>
 			<title>Short pencils</title>
 			<link>https://genderdoog.github.io/writing/short_pencils/</link>
