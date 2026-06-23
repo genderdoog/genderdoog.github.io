@@ -7,12 +7,20 @@
 		<link>https://genderdoog.github.io/writing/</link>
 		<description>Genderdoogs corner is a personal website created by Matthew. This is an RSS feed of his latest writing posts.</description>
 		<language>en-us</language>
-		<lastBuildDate>Mon, 22 Jun 2026 03:46:00 GMT</lastBuildDate>
+		<lastBuildDate>Tue, 23 Jun 2026 08:51:00 GMT</lastBuildDate>
 		
 		<atom:link href="https://genderdoog.github.io/feed.xml" 
 				   rel="self" 
 				   type="application/rss+xml" />
 
+		<item>
+			<title>Fixing a GA-H81M-S2PH motherboard</title>
+			<link>https://genderdoog.github.io/writing/fixing_GA_H81M_S2PH_motherboard/</link>
+			<description>My journey in trying to fix what most would consider e-waste.</description>
+			<pubDate>Tue, 23 Jun 2026 08:51:00 GMT</pubDate>
+			<guid isPermaLink="true">https://genderdoogscorner.github.io/writing/fixing_GA_H81M_S2PH_motherboard/</guid>
+		</item>
+		
 		<item>
 			<title>3D printed HDD brackets for p6 series HP desktops</title>
 			<link>https://genderdoog.github.io/writing/3d_printed_hdd_brackets/</link>

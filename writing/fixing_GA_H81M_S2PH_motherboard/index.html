@@ -1,0 +1,270 @@
+<!-- Fixing GA-H81M-S2PH motherboard -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Fixing a GA-H81M-S2PH motherboard - from Genderdoog's corner"> <!-- For search engines -->
+
+	<link rel="stylesheet" type="text/css" href="/css/styles.css">
+
+	<title>Fixing GA-H81M-S2PH motherboard | Genderdoog's corner</title>
+</head>
+
+<body class="content">
+	<header>
+		<h1>Genderdoog's corner</h1>
+		<nav aria-label="Primary navigation">
+			<a href="/">Home</a> |
+			<a href="/writing/">Writing</a> |
+			<a href="/toybox/">Toybox</a> |
+			<a href="/images/">Images</a> |
+			<a href="/videos/">Videos</a> |
+			<a href="/contact/">Contact</a>
+		</nav>
+	</header>
+
+	<main>
+		<hr>
+
+		<article>
+			<header>
+				<h2>Fixing a GA-H81M-S2PH motherboard</h2>
+				<p><strong>Written by:</strong> Matthew</p>
+				<p>
+					<time datetime="2026-06-23">Originally posted: 23rd of June, 2026</time><br>
+					<time datetime="2026-06-23">Last updated: 23rd of June, 2026</time>
+				</p>
+			</header>
+
+			<hr>
+
+			<section>
+				<h3>Oh no, my computer is not working!</h3>
+
+				<p>
+					Around late 2024, my dad was using his desktop computer as normal
+					until one day it stopped working. I opened up the case and my
+					troubleshooting led me to find out that some small SMD component
+					was fried near the 24 pin ATX power connector on the motherboard,
+					thus rendering the machine inoperable. What I think happened was
+					that the generic power supply in the machine went rogue and pumped
+					bad voltages into the motherboard. I guess you really shouldn't
+					cheap out on power supplies after all.
+				</p>
+
+				<p>
+					I looked online and I found that a replacement motherboard would
+					cost a ridiculous 50-ish dollars. Instead of that, we decided to
+					buy new parts. They would be more reliable anyways, as those parts
+					were heading on ten years old at that point. The new parts ended
+					up being an A520M motherboard, Ryzen 5 processor and 16gb of DDR4
+					ram <a href="#note1" id="ref1">[1]</a>. For reference, the old
+					parts were on a LGA 1150 platform which included a Pentium G3220
+					and 4gb of DDR3 ram. I reassembled everything, and everything
+					thankfully worked <a href="#note2" id="ref2">[2]</a>. However, I
+					still had this fried GIGABYTE GA-H81M-S2PH motherboard lying around.
+					So the question was: Could I potentially fix it?
+				</p>
+
+				<picture>
+					<source srcset="./../../img/writing/2026/06/fixing_GA_H81M_S2PH_motherboard/gigabyte_mb.webp" type="image/webp">
+					<img src="./../../img/writing/2026/06/fixing_GA_H81M_S2PH_motherboard/gigabyte_mb.png" alt="A Gigabyte GA-H81M-S2PH motherboard on a workbench" title="A Gigabyte GA-H81M-S2PH motherboard on a workbench">
+				</picture>
+			</section>
+
+			<section>
+				<h3>First attempts</h3>
+				<p>
+					The first problem in my attempt to fix the motherboard was the fact
+					that I didn't have access to a multimeter. However, I knew that my
+					school had some. So the plan was for me to take the motherboard along
+					with a power supply to school, and then work on the problem during my
+					self-studying periods in the electronics lab (with permission from the
+					teacher Mr. R).
+				<p>
+
+				<p>
+					The symptoms which the motherboard exhibited when I first began working
+					in it was that when power was applied to the board, the fans continuously
+					cycled on and off every five seconds or so. There was no video output at
+					all when connected to a monitor.
+				</p>
+
+				<p>
+					I first started out by drawing a pinout for the 24 pin ATX power.
+					I specifically wanted to find out what that blown up passive component
+					was near the 24 pin ATX power connector. While I was unable to find a
+					schematic diagram for my exact board model number, I did find one for the
+					GA-H81M-S2PT <a href="#note3" id="ref3">[3]</a>, which was very similar
+					to my board. I did eventually find out what pins connected to that blown
+					up component using the continuity function on the multimeter. At this point,
+					I can't remember what exact voltage rail it was, but I am pretty sure it
+					was a voltage rail anyways.
+				</p>
+
+				<picture>
+					<source srcset="./../../img/writing/2026/06/fixing_GA_H81M_S2PH_motherboard/bad_component.webp" type="image/webp">
+					<img src="./../../img/writing/2026/06/fixing_GA_H81M_S2PH_motherboard/bad_component.png" alt="A close up shot of a burnt component near 24 pin ATX power connector" title="A close up shot of a burnt component near 24 pin ATX power connector">
+				</picture>
+
+				<p>
+					I was getting my hopes up at this point in time! If I somehow managed
+					to replace that component then I could potentially have a working motherboard again.
+				</p>
+
+				<p>
+					Just to get a second opinion however, I explained what I had found
+					so far to Mr. R. He gave me the bad news though. The 24 pin ATX
+					connector is designed to have many pins to power the same voltage
+					rails of 12v, 5v and 3.3v. This meant that even if one of the pins
+					were not connected properly, then the other pins would still apply
+					an adequate amount of power to the board. Essentially, this blown
+					up component could not have been the issue.
+				</p>
+
+				<p>
+					Being the cool guy he is though, he suggested that I should use his
+					thermal camera for troubleshooting. The idea is that any shorted/faulty
+					components would heat up much quicker than any of the other components,
+					which would show up on the camera's display. A few days later, I walked
+					into the electronics lab to find a thermal camera sitting on the teacher's
+					desk.
+				</p>
+			</section>
+
+			<section>
+				<h3>Thermal camera time!</h3>
+
+				<p>
+					I first had to charge the thermal camera for a few minutes as the battery
+					was completely dead. In the box, there were also some lenses which you
+					can attach to the front camera. These lenses "magnify" the camera so you
+					can get much closer to an object without losing focus. This was exactly
+					what I needed in my scenario, as I had to point the thermal camera pretty
+					close to the PCB.
+				</p>
+
+				<picture>
+					<source srcset="./../../img/writing/2026/06/fixing_GA_H81M_S2PH_motherboard/thermal_camera.webp" type="image/webp">
+					<img src="./../../img/writing/2026/06/fixing_GA_H81M_S2PH_motherboard/thermal_camera.png" alt="Images of a thermal camera being used for diagnosis" title="Images of a thermal camera being used for diagnosis">
+				</picture>
+
+				<p>
+					I applied power to the board and started looking around. I would love
+					to have found a shorted resistor at 80 degrees celsius or something but it
+					wasn't that easy. I couldn't find anything getting abnormally hot. The only
+					thing that even looked slightly suspicious was a couple resistors near the
+					platform controller hub. I removed them from the board completely and tested the
+					board again. Surprise surprise, this did nothing to fix the board. Unfortunately,
+					this was another dead end in my journey to fix this board.
+				</p>
+			</section>
+
+			<section>
+				<h3>Checking for shorts</h3>
+
+				<p>
+					I switched the multimeter into continuity mode again and started probing
+					around any capacitor for shorts. The idea was that you can tell if a
+					capacitor is shorted or not by placing your probes on the positive and
+					negative ends. If the multimeter beeps, then you know that the capacitor
+					is shorted. After doing this for a while, I found out that pretty much
+					all of the capacitors which I checked were showing up as shorted. That
+					seemed strange, how could so many capacitors be shorted?
+				</p>
+
+				<p>
+					Confused by the situation, I asked Mr. R and he explained what could
+					potentially be happening. He also drew up this quick diagram pictured below.
+				</p>
+
+				<picture>
+					<source srcset="./../../img/writing/2026/06/fixing_GA_H81M_S2PH_motherboard/circuit_diagram.webp" type="image/webp">
+					<img src="./../../img/writing/2026/06/fixing_GA_H81M_S2PH_motherboard/circuit_diagram.jpg" alt="Simple hand drawn on paper circuit diagram" title="Simple hand drawn on paper circuit diagram">
+				</picture>
+
+				<p>
+					If I remember correctly, he explained that if one of the capacitors/components
+					in a parallel circuit becomes shorted, this can make other components also
+					show up as shorted even if they are not. The diagram above shows us that
+					if the bottom capacitor is fouled, then if you try to check if the top
+					capacitor then it will also show up as shorted.
+				</p>
+
+				<p>
+					After a bit more probing around, I soon concluded that the bad power
+					supply fried the PCH chip, causing it to short internally. Since there
+					was no way that I was learning BGA rework, and also the fact that I
+					didn't have access to any hot air station, I made the executive decision
+					to just give up on the project.
+			</section>
+
+			<section>
+				<h3>Spoiler: I failed</h3>
+
+				<p>
+					Yes, in the end I failed to fix the motherboard. Though strange enough,
+					I don't think this journey was as big of a failure as you might at first
+					think. This is because I learnt a few things along the way.
+				</p>
+
+				<p>
+					For starters, I learnt how to use a multimeter. Up until that point in
+					time I had watched a few videos on how to use a multimeter though I never
+					used one in practice. Now, I definitely feel like I have a much better
+					grasp on what the different features are and how to use them. I can
+					confidently measure DC voltages for example.
+				</p>
+
+				<p>
+					I also got to mess around with a thermal camera. I mean, these things
+					are not cheap and I find them fun to play around with. Even by itself,
+					this experience would have been worth it just for that.
+				</p>
+
+				<p>
+					I think this just goes to show how even if you fail at achieving your
+					primary objective (whatever it might be), you can still consider something
+					a success because of all the things you have learnt during that journey. We
+					idolize the idea of being "perfect", yet we often miss out on the fact that
+					we often have to fail a lot in order to learn and gain important experience.
+					You can't be truly perfect, yet you can always learn new things which can make
+					you ever so closer to the popular objective of living a perfect life.
+				</p>
+			</section>
+
+			<section>
+				<h3>Notes</h3>
+
+				<ul>
+					<li id="note1">
+						[1] As of writing, that same RAM kit is now selling for more than
+						6 times the price we paid for it back then in late 2024.
+						<a href="#ref1">&#x21a9; Back</a>
+					</li>
+
+					<li id="note2">
+						[2] The idea was that we would reuse the hard drive and thus the
+						same Windows installation as it was undamaged. When we booted up the
+						computer for the first time with the new components installed,
+						we got the activation watermark in the bottom right. Since we
+						didn't have a Microsoft account linked to the computer before
+						the motherboard swap, we lost Windows activation unfortunately.
+						<a href="#ref2">&#x21a9; Back</a>
+					</li>
+
+					<li id="note3">
+						[3] <a href="https://forum.laboneinside.com/viewtopic.php?t=4899" target="_blank" rel="noopener noreferrer">Link</a> to where I got the schematic.
+						<a href="#ref3">&#x21a9; Back</a>
+					</li>
+				</ul>
+			</section>
+
+		</article>
+
+		<hr>
+		<a href="../">Back to Writing homepage</a>
+	</main>
+</body>
+</html>
