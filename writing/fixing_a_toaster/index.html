@@ -1,0 +1,176 @@
+<!-- Fixing a toaster -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Fixing a toaster - from Genderdoog's corner"> <!-- For search engines -->
+
+	<link rel="stylesheet" type="text/css" href="/css/styles.css">
+
+	<title>Fixing a toaster | Genderdoog's corner</title>
+</head>
+
+<body class="content">
+	<header>
+		<h1>Genderdoog's corner</h1>
+		<nav aria-label="Primary navigation">
+			<a href="/">Home</a> |
+			<a href="/writing/">Writing</a> |
+			<a href="/toybox/">Toybox</a> |
+			<a href="/images/">Images</a> |
+			<a href="/videos/">Videos</a> |
+			<a href="/contact/">Contact</a>
+		</nav>
+	</header>
+
+	<main>
+		<hr>
+
+		<article>
+			<header>
+				<h2>Fixing a toaster</h2>
+				<p><strong>Written by:</strong> Matthew</p>
+				<p>
+					<time datetime="2026-06-24">Originally posted: 24th of June, 2026</time><br>
+					<time datetime="2026-06-24">Last updated: 24th of June, 2026</time>
+				</p>
+			</header>
+
+			<hr>
+
+			<section>
+				<h3>Problem</h3>
+
+				<p>
+					A year or so ago, our decade old Breville Freestyle toaster started acting up. No matter
+					how you set the browning dial, the toast either came out too raw or too
+					burnt. Goldilocks would not be happy. Anyways, to solve this problem, my
+					family bought the cheapest toaster that we could find at the time and moved on.
+				</p>
+
+				<p>
+					But I didn't move on. Before we threw it out, of course I had to figure out
+					if I could fix it.
+				</p>
+
+				<p>
+					My theory as to what was happening was that the potentiometer that was
+					controlling the browning dial had gone faulty. This meant that the resistance
+					values that it was giving the microcontroller was making the toaster act all
+					funny. Therefore, the plan was to take it all apart so that I could get to the
+					circuit board, and to test the potentiometer with a multimeter. This would
+					confirm whether or not it was at fault.
+
+				<picture>
+					<source srcset="/img/writing/2026/06/fixing_a_toaster/toaster.webp" type="image/webp">
+					<img src="/img/writing/2026/06/fixing_a_toaster/toaster.jpg" alt="A broken toaster sitting on a white table" title="A broken toaster sitting on a white table">
+				</picture>
+			</section>
+
+			<section>
+				<h3>Troubleshooting</h3>
+
+				<p>
+					The toaster was quite easy to take apart, minus the decades worth of breadcrumbs
+					which constantly fell out during disassembly. There are a few philips head screws
+					underneath, with some hiding behind the removable breadcrumb tray as well.
+					I also had to remove the plastic browning dial and the plastic push down handle.
+					Soon enough, I had the circuit board taken out.
+				</p>
+
+				<picture>
+					<source srcset="/img/writing/2026/06/fixing_a_toaster/toaster_circuit_board.webp" type="image/webp">
+					<img src="/img/writing/2026/06/fixing_a_toaster/toaster_circuit_board.jpg" alt="Bare toaster circuit board on a white table with potentiometer removed" title="Bare toaster circuit board on a white table with potentiometer removed">
+				</picture>
+
+				<p>
+					At the time, I didn't have access to a multimeter at home so instead, I took
+					the circuit board to the electronics lab at my school. I also brought along
+					some desoldering braid that I had at home, so I could use their soldering iron
+					to remove the potentiometer from the board. Unfortunately, you cannot measure
+					resistance reliably while a component is still in circuit, so this step was necessary.
+				</p>
+
+				<p>
+					It took an embarrassingly long time, maybe half an hour to actually desolder
+					it. I tried to use those handheld solder suckers at first, but they didn't do
+					anything. My desoldering braid saved me that day.
+				</p>
+
+				<p>
+					Sure enough, when I checked with the multimeter the potentiometer turned out
+					bad. The resistance values were jumping all over the place. When I asked the
+					teacher Mr. R what was happening, he explained that this is what is known as
+					"bouncing". This was most likely due to internal wear inside of the potentiometer,
+					which would necessitate a full replacement if I wanted to fix the issue.
+				</p>
+
+
+				<p>
+					The MP4 video below shows what a good 10k ohm potentiometer looks like. The
+					readings are very smooth as I go through its range.
+				</p>
+
+				<video width="640" height="360" controls muted>
+					<source src="/vid/writing/2026/06/fixing_a_toaster/good_potentiometer.mp4" type="video/mp4">
+					Your browser does not support the video tag.
+				</video>
+
+				<p>
+					However, this MP4 video below shows what readings I got from the potentiometer
+					from the toaster. As you can see, the values jump all over the place as I turn the knob.
+				</p>
+
+				<video width="640" height="360" controls muted>
+					<source src="/vid/writing/2026/06/fixing_a_toaster/bad_potentiometer.mp4" type="video/mp4">
+					Your browser does not support the video tag.
+				</video>
+
+				<p>
+					The bad news from all of this is that the potentiometer was rated at a weird
+					250k ohms resistance. This was much higher than anything Mr. R could find laying
+					around in the electronics lab. Furthermore, the potentiometers that he could find
+					were not in the right form factor. This is important, as the plastic knob needs to
+					fit securely on the potentiometer in order for it to work. Unfortunately, if I
+					wanted this thing fixed then I would be alone from this point onwards.
+				</p>
+			</section>
+
+			<section>
+				<h3>Research (and disappointment)</h3>
+
+				<p>
+					I started looking online in places like Mouser and Digikey. At first, I thought
+					I was straight out of luck. I couldn't find any which looked anything like the one
+					I needed. I persisted through my searches though, and I soon found what I was looking for. Introducing the BOURNS <strong><a href="https://nz.mouser.com/ProductDetail/Bourns/PDB12-H4201-254BF?qs=W%2FMpXkg%252BdQ7BEi8tNcjwZA%3D%3D" target="_blank" rel="noopener noreferrer">PDB12-H4201-254BF</a></strong> (<a href="https://nz.mouser.com/datasheet/3/40/1/pdb12.pdf" target="_blank" rel="noopener noreferrer">Datasheet</a>), the exact replacement part that I needed. Even better, it was in stock!
+				</p>
+
+				<p>
+					Cool right? All I needed to do was to order and get it shipped to my door and...
+				</p>
+
+				<picture>
+					<source srcset="/img/writing/2026/06/fixing_a_toaster/price.webp" type="image/webp">
+					<img src="/img/writing/2026/06/fixing_a_toaster/price.png" alt="A screenshot of a Mouser order costing $28.60" title="A screenshot of a Mouser order costing $28.60">
+				</picture>
+
+
+				<p>
+					Yeah, there is no way I am spending $28.60 on a single potentiometer.
+					I mean, you can buy another supermarket toaster for that price!
+				</p>
+
+				<p>
+					At this point, I decided to end my journey here. The toaster
+					shall never be fixed after all.
+				</p>
+			</section>
+
+		</article>
+
+		<hr>
+		<a href="../">Back to Writing homepage</a>
+	</main>
+</body>
+</html>

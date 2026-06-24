@@ -15,8 +15,8 @@
 	margin-bottom: 5vw; /* Adds some margin to bottom of webpage */
 }
 
-/* Resizes any images to fit the width of 60 character */
-.content img {
+/* Resizes any images and videos to fit the width of 60 character */
+.content img, video {
 	max-width: 100%;
 	height: auto;
 	display: block;
