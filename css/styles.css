@@ -22,3 +22,8 @@
 	display: block;
 	margin: 1rem 0;
 }
+
+/* Add padding for footnotes */
+.footnotes li {
+	margin-bottom: 16px;
+}
